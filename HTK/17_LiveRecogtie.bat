@@ -1,0 +1,1 @@
+HVite -H ./am/tiehmm2m_5/newMacros -C ./config/liveRecog.config -w ./lm/dgs.wdnet ./config/dgs.dict config/tie.list

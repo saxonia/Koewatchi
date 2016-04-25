@@ -1,0 +1,1 @@
+HParse config/dgs.gram lm/dgs.wdnet
