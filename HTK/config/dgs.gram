@@ -3,6 +3,6 @@ $feed = pizza|mango|friedChicken|salad|ice;
 $relax = music|movie|game|book|sleep;
 $travel = garden|neighbor|sea|mountain|forest;
 $train= run|jump|meditate|punch|force;
-$fight = golem|dragon|boss;
+$fight = dummy|slime|golem|dragon|boss;
 ( SENT-START (<$action> <$feed|$relax|$travel|$train|$fight>) SENT-END )
 
