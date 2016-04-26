@@ -1,34 +1,34 @@
-feed [feed] h a i z aa h aa n^ //ลืมละเขียนไง
-relax [relax] 
-travel [travel]
-train [train]
-fight [fight]
+feed [feed] h a j^ z aa h aa n^ 
+relax [relax] ph a k^ ph @@ n^
+travel [travel] th iia w^  //เที่ยวหรือท่องเที่ยว
+train [train] f v k^ s @@ m^
+fight [fight] t @@ s uu  //สู้หรือต่อสู้
 none [none] sil
-pizza [pizza]
-mango [mango]
-friedChicken [friedChicken]
-salad [salad]
-ice [ice]
-music [listen music]
-movie [watch movie]
-game [play game] 
-book [read book]
-sleep [sleep]
-garden [garden]
-neighbor [neighbor house] b aa n^
+pizza [pizza] ph i t^ s aa 
+mango [mango] m a m uua ng^
+friedChicken [friedChicken] k a j^ th @@ t^
+salad [salad] s a l a t^
+ice [ice] n a m^ kh x ng^ s a j^ 
+music [listen music] f a ng^ phl ee ng^
+movie [watch movie] d uu n a ng^ 
+game [play game] l ee n^ k ee m^
+book [read book] z aa n^ n a ng^ s vv
+sleep [sleep] n @@ n^ l a p^
+garden [garden] s uua n^ j aa
+neighbor [neighbor house] b aa n^ ph vva n^
 sea [sea] th a l ee
-mountain [mountain] ph uu kh aau 
-forest [forest]  // อยากเปลี่ยนเป็นน้ำตก จะดีมั้ยอะ 
+mountain [mountain] ph uu kh a w^ 
+forest [forest] p aa // ป่าหรือเข้าป่า 
 run [run] w i ng^ 
 jump [jump] kr a d oo t^
 meditate [meditate] n a ng^ s a m aa th i
 punch [punch] t @@ j^ 
 force [force] pl @@ j^ ph a l a ng^
 dummy [training dummy] h u n^ s @@ m^
-slime [slime] 
+slime [slime] s a l aa m^
 golem [golem] k oo l ee m^
 dragon [dragon] m a ng^ k @@ n^
-boss [boss] b @@ s^
+boss [boss] b @@ s^ //บอสหรือบอสสุดท้ายดี ??
 SENT-START [] sil 
 SENT-END [] sil 
 
