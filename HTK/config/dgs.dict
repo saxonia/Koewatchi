@@ -27,6 +27,6 @@ dummy [training dummy] h u n^ s @@ m^
 slime [slime] s a l aa m^
 golem [golem] k oo l ee m^
 dragon [dragon] m a ng^ k @@ n^
-boss [boss] b @@ s^ //บอสหรือบอสสุดท้ายดี ??
+boss [boss] b @@ s^
 SENT-START [] sil
 SENT-END [] sil
