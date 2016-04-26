@@ -4,5 +4,4 @@ $relax = music|movie|game|book|sleep;
 $travel = garden|neighbor|sea|mountain|forest;
 $train= run|jump|meditate|punch|force;
 $fight = dummy|slime|golem|dragon|boss;
-( SENT-START [feed $feed] SENT-END )
-
+( SENT-START [feed $feed | relax $relax | travel $travel | train $train | fight $fight] SENT-END )
