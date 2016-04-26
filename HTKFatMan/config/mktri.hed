@@ -1,0 +1,22 @@
+CL config/triphn.list
+TI T_@@ {(*-@@+*,@@+*,*-@@).transP}
+TI T_aa {(*-aa+*,aa+*,*-aa).transP}
+TI T_c {(*-c+*,c+*,*-c).transP}
+TI T_e {(*-e+*,e+*,*-e).transP}
+TI T_h {(*-h+*,h+*,*-h).transP}
+TI T_ii {(*-ii+*,ii+*,*-ii).transP}
+TI T_k {(*-k+*,k+*,*-k).transP}
+TI T_k^ {(*-k^+*,k^+*,*-k^).transP}
+TI T_m^ {(*-m^+*,m^+*,*-m^).transP}
+TI T_n {(*-n+*,n+*,*-n).transP}
+TI T_n^ {(*-n^+*,n^+*,*-n^).transP}
+TI T_ng^ {(*-ng^+*,ng^+*,*-ng^).transP}
+TI T_o {(*-o+*,o+*,*-o).transP}
+TI T_p {(*-p+*,p+*,*-p).transP}
+TI T_s {(*-s+*,s+*,*-s).transP}
+TI T_t^ {(*-t^+*,t^+*,*-t^).transP}
+TI T_uu {(*-uu+*,uu+*,*-uu).transP}
+TI T_v {(*-v+*,v+*,*-v).transP}
+TI T_w^ {(*-w^+*,w^+*,*-w^).transP}
+TI T_xx {(*-xx+*,xx+*,*-xx).transP}
+TI T_sil {(*-sil+*,sil+*,*-sil).transP}

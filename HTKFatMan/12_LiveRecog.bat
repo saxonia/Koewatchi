@@ -1,0 +1,1 @@
+HVite -H am/tiehmm2m_1/newMacros -C config/liverecog.config -w lm/dgs.wdnet config/dgs.dict config/tie.list
