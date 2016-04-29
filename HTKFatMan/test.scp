@@ -1,3 +1,8 @@
+test/sound1.mfc
+test/sound2.mfc
+test/sound3.mfc
+test/sound4.mfc
+test/sound5.mfc
 test/sound6.mfc
 test/sound7.mfc
 test/sound8.mfc
@@ -21,5 +26,4 @@ test/sound25.mfc
 test/sound26.mfc
 test/sound27.mfc
 test/sound28.mfc
-test/word1.mfc
-test/word2.mfc
+

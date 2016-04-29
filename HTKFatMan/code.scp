@@ -1,3 +1,8 @@
+wav/sound1.wav mfc/sound1.mfc
+wav/sound2.wav mfc/sound2.mfc
+wav/sound3.wav mfc/sound3.mfc
+wav/sound4.wav mfc/sound4.mfc
+wav/sound5.wav mfc/sound5.mfc
 wav/sound6.wav mfc/sound6.mfc
 wav/sound7.wav mfc/sound7.mfc
 wav/sound8.wav mfc/sound8.mfc
@@ -21,6 +26,4 @@ wav/sound25.wav mfc/sound25.mfc
 wav/sound26.wav mfc/sound26.mfc
 wav/sound27.wav mfc/sound27.mfc
 wav/sound28.wav mfc/sound28.mfc
-wav/word1.wav mfc/word1.mfc
-wav/word2.wav mfc/word2.mfc
 

@@ -1,67 +1,138 @@
 #!MLF!#
-"*/word1.lab"
-feed 
-pizza
-mango
-friedChicken
-salad
-ice
-relax 
-listenMusic
-watchMovie
-playGame
-readBook
-sleep
-travel 
-garden
-neighborHouse
-sea
-mountain
-island
-train 
-run
-jump
-meditate
-punch
-force
-fight 
-trainingDummy
-slime
-golem
-dragon
-boss
+"*/sound1.lab"
+feed pizza
+feed mango
+feed friedChicken
+feed salad
+feed ice
+relax listenMusic
+relax watchMovie
+relax playGame
+relax readBook
+relax sleep
+travel garden
+travel neighborHouse
+travel sea
+travel mountain
+travel island
+train run
+train jump
+train meditate
+train punch
+train force
+fight trainingDummy
+fight slime
+fight golem
+fight dragon
+fight boss
 .
-"*/word2.lab"
-feed 
-pizza
-mango
-friedChicken
-salad
-ice
-relax 
-listenMusic
-watchMovie
-playGame
-readBook
-sleep
-travel 
-garden
-neighborHouse
-sea
-mountain
-island
-train 
-run
-jump
-meditate
-punch
-force
-fight 
-trainingDummy
-slime
-golem
-dragon
-boss
+"*/sound2.lab"
+feed pizza
+feed mango
+feed friedChicken
+feed salad
+feed ice
+relax listenMusic
+relax watchMovie
+relax playGame
+relax readBook
+relax sleep
+travel garden
+travel neighborHouse
+travel sea
+travel mountain
+travel island
+train run
+train jump
+train meditate
+train punch
+train force
+fight trainingDummy
+fight slime
+fight golem
+fight dragon
+fight boss
+.
+"*/sound3.lab"
+feed pizza
+feed mango
+feed friedChicken
+feed salad
+feed ice
+relax listenMusic
+relax watchMovie
+relax playGame
+relax readBook
+relax sleep
+travel garden
+travel neighborHouse
+travel sea
+travel mountain
+travel island
+train run
+train jump
+train meditate
+train punch
+train force
+fight trainingDummy
+fight slime
+fight golem
+fight dragon
+fight boss
+.
+"*/sound4.lab"
+feed pizza
+feed mango
+feed friedChicken
+feed salad
+feed ice
+relax listenMusic
+relax watchMovie
+relax playGame
+relax readBook
+relax sleep
+travel garden
+travel neighborHouse
+travel sea
+travel mountain
+travel island
+train run
+train jump
+train meditate
+train punch
+train force
+fight trainingDummy
+fight slime
+fight golem
+fight dragon
+fight boss
+.
+"*/sound5.lab"
+feed pizza
+feed mango
+feed friedChicken
+feed salad
+feed ice
+relax listenMusic
+relax watchMovie
+relax playGame
+relax readBook
+relax sleep
+travel garden
+travel neighborHouse
+travel sea
+travel mountain
+travel island
+train run
+train jump
+train meditate
+train punch
+train force
+fight trainingDummy
+fight slime
+fight golem
+fight dragon
+fight boss
 .
 "*/sound6.lab"
 feed pizza
