@@ -44,6 +44,7 @@ QS 'L_a' { "a-*" }
 QS 'L_aa' { "aa-*" }
 QS 'L_u' { "u-*" }
 QS 'L_uu' { "uu-*" }
+QS 'L_o' { "o-*" }
 QS 'L_oo' { "oo-*" }
 QS 'L_@' { "@-*" }
 QS 'L_@@' { "@@-*" }
@@ -124,6 +125,7 @@ QS 'R_a' { "*+a" }
 QS 'R_aa' { "*+aa" }
 QS 'R_u' { "*+u" }
 QS 'R_uu' { "*+uu" }
+QS 'R_o' { "*+o" }
 QS 'R_oo' { "*+oo" }
 QS 'R_@' { "*+@" }
 QS 'R_@@' { "*+@@" }
@@ -162,54 +164,102 @@ QS 'R_s^' { "*+s^" }
 
 ph[2]
 {
-   0                'L_Vowel'  "ST_ph_2_1"  "ST_ph_2_2" 
+   0                   'L_k^'      -1     "ST_ph_2_9" 
+  -1                'L_Final'      -4         -2    
+  -2             'L_Alveolar'      -3         -5    
+  -3            'L_Semivowel'  "ST_ph_2_3"      -6    
+  -4               'L_Voiced'  "ST_ph_2_1"  "ST_ph_2_2" 
+  -5                'R_Front'      -7     "ST_ph_2_8" 
+  -6              'L_Palatal'  "ST_ph_2_4"  "ST_ph_2_5" 
+  -7               'L_Voiced'  "ST_ph_2_6"  "ST_ph_2_7" 
 }
 
 th[2]
-   "ST_th_2_1"
+{
+   0             'R_Dipthong'      -3         -1    
+  -1               'L_Labial'      -2         -6    
+  -2              'L_Central'      -4     "ST_th_2_7" 
+  -3              'L_Palatal'      -5     "ST_th_2_3" 
+  -4                'L_Vowel'      -7     "ST_th_2_6" 
+  -5                'L_Final'  "ST_th_2_1"  "ST_th_2_2" 
+  -6               'L_Voiced'  "ST_th_2_8"  "ST_th_2_9" 
+  -7               'L_Voiced'  "ST_th_2_4"  "ST_th_2_5" 
+}
 
 kh[2]
-   "ST_kh_2_1"
+{
+   0                'L_Vowel'  "ST_kh_2_1"  "ST_kh_2_2" 
+}
 
 t[2]
-   "ST_t_2_1"
+{
+   0               'L_Voiced'  "ST_t_2_1"  "ST_t_2_2" 
+}
 
 k[2]
 {
-   0                'L_Vowel'  "ST_k_2_1"  "ST_k_2_2" 
+   0                  'R_Low'      -3         -1    
+  -1                'R_Short'  "ST_k_2_2"      -2    
+  -2            'L_Semivowel'  "ST_k_2_3"  "ST_k_2_4" 
+  -3                'L_Vowel'  "ST_k_2_1"  "ST_k_2_3" 
 }
 
 z[2]
-   "ST_z_2_1"
+{
+   0            'L_Semivowel'  "ST_z_2_1"  "ST_z_2_2" 
+}
 
 b[2]
-   "ST_b_2_1"
+{
+   0                'L_Vowel'  "ST_b_2_1"  "ST_b_2_2" 
+}
 
 d[2]
-   "ST_d_2_1"
+{
+   0                'L_Vowel'  "ST_d_2_1"  "ST_d_2_2" 
+}
 
 m[2]
 {
-   0             'R_Dipthong'  "ST_m_2_1"  "ST_m_2_2" 
+   0                   'R_aa'      -1     "ST_m_2_4" 
+  -1                'L_Vowel'  "ST_m_2_1"      -2    
+  -2                 'L_Long'  "ST_m_2_2"  "ST_m_2_3" 
 }
 
 n[2]
-   "ST_n_2_1"
+{
+   0                'R_Short'  "ST_n_2_1"      -1    
+  -1               'L_Labial'  "ST_n_2_2"  "ST_n_2_3" 
+}
 
 f[2]
-   "ST_f_2_1"
+{
+   0                'L_Final'      -2         -1    
+  -1                'L_Velar'      -3     "ST_f_2_5" 
+  -2               'L_Voiced'  "ST_f_2_1"  "ST_f_2_5" 
+  -3               'L_Voiced'  "ST_f_2_2"      -4    
+  -4               'L_Labial'  "ST_f_2_3"  "ST_f_2_4" 
+}
 
 s[2]
 {
-   0                   'R_@@'  "ST_s_2_1"      -1    
-  -1               'L_Voiced'  "ST_s_2_2"  "ST_s_2_3" 
+   0                   'L_k^'      -1     "ST_s_2_8" 
+  -1                   'L_m^'      -2     "ST_s_2_7" 
+  -2            'L_Semivowel'      -3     "ST_s_2_6" 
+  -3               'L_Voiced'  "ST_s_2_1"      -4    
+  -4                   'R_@@'      -5     "ST_s_2_5" 
+  -5                  'L_Low'      -6     "ST_s_2_4" 
+  -6                'L_Vowel'      -7     "ST_s_2_3" 
+  -7              'R_Central'  "ST_s_2_5"  "ST_s_2_2" 
 }
 
 h[2]
 {
-   0             'L_Unvoiced'      -1     "ST_h_2_3" 
-  -1                'L_Vowel'  "ST_h_2_1"      -2    
-  -2                    'R_a'  "ST_h_2_2"  "ST_h_2_3" 
+   0                'L_Vowel'      -1         -2    
+  -1                'L_Final'  "ST_h_2_1"      -4    
+  -2                 'R_Long'      -3     "ST_h_2_6" 
+  -3                 'L_Back'  "ST_h_2_4"  "ST_h_2_5" 
+  -4             'L_Alveolar'  "ST_h_2_2"  "ST_h_2_3" 
 }
 
 w[2]
@@ -220,7 +270,12 @@ r[2]
 
 l[2]
 {
-   0                'L_Vowel'  "ST_l_2_1"  "ST_l_2_2" 
+   0                'L_Nasal'      -1         -3    
+  -1                 'R_Long'      -2         -4    
+  -2                'L_Vowel'  "ST_l_2_3"  "ST_l_2_1" 
+  -3                 'R_Long'  "ST_l_2_5"  "ST_l_2_6" 
+  -4              'R_Central'      -5     "ST_l_2_4" 
+  -5                 'L_Long'  "ST_l_2_2"  "ST_l_2_3" 
 }
 
 j[2]
@@ -236,11 +291,19 @@ kr[2]
    "ST_kr_2_1"
 
 i[2]
-   "ST_i_2_1"
+{
+   0                   'L_ph'      -1     "ST_i_2_4" 
+  -1             'L_Unvoiced'  "ST_i_2_1"      -2    
+  -2              'R_Initial'  "ST_i_2_2"  "ST_i_2_3" 
+}
 
 ee[2]
 {
-   0                   'R_n^'  "ST_ee_2_1"  "ST_ee_2_2" 
+   0             'R_Unvoiced'      -1     "ST_ee_2_6" 
+  -1             'R_Alveolar'      -2     "ST_ee_2_5" 
+  -2               'L_Voiced'  "ST_ee_2_1"      -3    
+  -3              'L_Cluster'      -4     "ST_ee_2_4" 
+  -4               'R_Voiced'  "ST_ee_2_2"  "ST_ee_2_3" 
 }
 
 x[2]
@@ -250,37 +313,73 @@ v[2]
    "ST_v_2_1"
 
 vv[2]
-   "ST_vv_2_1"
+{
+   0             'R_Unvoiced'  "ST_vv_2_1"  "ST_vv_2_2" 
+}
 
 a[2]
 {
-   0               'L_Labial'      -1     "ST_a_2_2" 
-  -1                    'L_s'  "ST_a_2_1"  "ST_a_2_2" 
+   0            'L_Aspirated'      -1         -6    
+  -1              'L_Lateral'      -2         -7    
+  -2            'R_Semivowel'      -3         -4    
+  -3                'L_Trill'      -5     "ST_a_2_5" 
+  -4             'L_Alveolar'     -12     "ST_a_2_11" 
+  -5                    'R_m'      -9     "ST_a_2_4" 
+  -6             'L_Alveolar'     -11     "ST_a_2_13" 
+  -7               'R_Labial'      -8     "ST_a_2_10" 
+  -8               'R_Voiced'  "ST_a_2_8"  "ST_a_2_9" 
+  -9                'R_Velar'  "ST_a_2_1"     -10    
+ -10               'L_Voiced'  "ST_a_2_2"  "ST_a_2_3" 
+ -11               'L_Labial'  "ST_a_2_11"  "ST_a_2_12" 
+ -12             'L_Unvoiced'  "ST_a_2_6"  "ST_a_2_7" 
 }
 
 aa[2]
 {
-   0            'R_Fricative'      -1     "ST_aa_2_4" 
-  -1             'L_Alveolar'  "ST_aa_2_1"      -2    
-  -2                'L_Trill'  "ST_aa_2_2"  "ST_aa_2_3" 
+   0             'L_Alveolar'      -1         -3    
+  -1          'L_Stop-Voiced'      -2     "ST_aa_2_7" 
+  -2            'L_Semivowel'      -4         -7    
+  -3              'L_Lateral'      -5     "ST_aa_2_11" 
+  -4            'R_Fricative'      -6     "ST_aa_2_4" 
+  -5               'L_Voiced'      -8     "ST_aa_2_10" 
+  -6            'L_Fricative'      -9     "ST_aa_2_3" 
+  -7             'R_Unvoiced'  "ST_aa_2_5"  "ST_aa_2_6" 
+  -8              'R_Initial'  "ST_aa_2_8"  "ST_aa_2_9" 
+  -9               'L_Voiced'  "ST_aa_2_1"  "ST_aa_2_2" 
 }
 
 u[2]
    "ST_u_2_1"
 
 uu[2]
-   "ST_uu_2_1"
+{
+   0               'L_Voiced'      -1     "ST_uu_2_5" 
+  -1                 'R_Stop'  "ST_uu_2_1"      -2    
+  -2          'R_Unaspirated'      -3     "ST_uu_2_4" 
+  -3            'L_Fricative'  "ST_uu_2_2"  "ST_uu_2_3" 
+}
+
+o[2]
+   "ST_o_2_1"
 
 oo[2]
-   "ST_oo_2_1"
+{
+   0               'L_Voiced'  "ST_oo_2_1"  "ST_oo_2_2" 
+}
 
 @[2]
    "ST_@_2_1"
 
 @@[2]
 {
-   0               'L_Labial'      -1     "ST_@@_2_3" 
-  -1             'R_Alveolar'  "ST_@@_2_1"  "ST_@@_2_2" 
+   0                'R_Nasal'      -2         -1    
+  -1            'L_Fricative'      -3     "ST_@@_2_8" 
+  -2          'L_Stop-Voiced'      -4     "ST_@@_2_4" 
+  -3            'L_Aspirated'      -5     "ST_@@_2_7" 
+  -4            'L_Aspirated'      -6     "ST_@@_2_3" 
+  -5               'L_Voiced'  "ST_@@_2_5"  "ST_@@_2_6" 
+  -6              'R_Initial'      -7     "ST_@@_2_2" 
+  -7               'L_Voiced'  "ST_@@_2_6"  "ST_@@_2_1" 
 }
 
 iia[2]
@@ -290,34 +389,88 @@ vva[2]
    "ST_vva_2_1"
 
 uua[2]
-   "ST_uua_2_1"
+{
+   0               'L_Voiced'  "ST_uua_2_1"  "ST_uua_2_2" 
+}
 
 p^[2]
    "ST_p^_2_1"
 
 t^[2]
-   "ST_t^_2_1"
+{
+   0                  'L_Low'      -1         -3    
+  -1              'R_Initial'  "ST_t^_2_1"      -2    
+  -2                'L_Short'  "ST_t^_2_2"  "ST_t^_2_3" 
+  -3              'R_Initial'  "ST_t^_2_4"  "ST_t^_2_5" 
+}
 
 k^[2]
-   "ST_k^_2_1"
+{
+   0                 'L_High'      -1     "ST_k^_2_3" 
+  -1             'R_Unvoiced'  "ST_k^_2_1"  "ST_k^_2_2" 
+}
 
 m^[2]
-   "ST_m^_2_1"
+{
+   0                    'L_o'      -1         -6    
+  -1              'R_Initial'      -7         -2    
+  -2                   'R_ph'      -3     "ST_m^_2_8" 
+  -3              'L_Central'      -4         -8    
+  -4            'R_Fricative'      -5         -9    
+  -5            'R_Cluster-l'  "ST_m^_2_3"  "ST_m^_2_5" 
+  -6              'R_Initial'  "ST_m^_2_9"  "ST_m^_2_10" 
+  -7                'L_Front'  "ST_m^_2_1"  "ST_m^_2_2" 
+  -8                 'L_Long'  "ST_m^_2_6"  "ST_m^_2_7" 
+  -9                'L_Front'  "ST_m^_2_4"  "ST_m^_2_5" 
+}
 
 n^[2]
 {
-   0             'L_Dipthong'  "ST_n^_2_1"  "ST_n^_2_2" 
+   0                 'L_Long'  "ST_n^_2_1"      -1    
+  -1                    'R_f'      -2     "ST_n^_2_14" 
+  -2                 'L_Back'      -5         -3    
+  -3                'R_Nasal'      -4     "ST_n^_2_13" 
+  -4          'R_Stop-Voiced'      -8     "ST_n^_2_12" 
+  -5                'L_Front'      -6     "ST_n^_2_7" 
+  -6                  'L_vva'      -7     "ST_n^_2_6" 
+  -7                    'R_m'      -9     "ST_n^_2_5" 
+  -8               'R_Voiced'     -10     "ST_n^_2_11" 
+  -9                'R_Nasal'     -11     "ST_n^_2_4" 
+ -10            'R_Fricative'     -13     "ST_n^_2_10" 
+ -11                   'L_aa'  "ST_n^_2_9"     -12    
+ -12             'R_Unvoiced'  "ST_n^_2_2"  "ST_n^_2_3" 
+ -13             'R_Unvoiced'  "ST_n^_2_8"  "ST_n^_2_9" 
 }
 
 ng^[2]
-   "ST_ng^_2_1"
+{
+   0                    'L_x'      -1     "ST_ng^_2_13" 
+  -1             'R_Unvoiced'      -2         -3    
+  -2             'L_Dipthong'      -4         -8    
+  -3              'R_Cluster'      -9     "ST_ng^_2_12" 
+  -4              'R_Initial'      -7         -5    
+  -5                 'L_Long'      -6     "ST_ng^_2_6" 
+  -6                'L_Front'  "ST_ng^_2_4"  "ST_ng^_2_5" 
+  -7                 'L_High'     -11     "ST_ng^_2_3" 
+  -8              'R_Initial'  "ST_ng^_2_7"  "ST_ng^_2_8" 
+  -9                 'L_Long'     -10     "ST_ng^_2_11" 
+ -10            'R_Aspirated'  "ST_ng^_2_9"  "ST_ng^_2_10" 
+ -11                 'L_Long'  "ST_ng^_2_1"     -12    
+ -12                'L_Front'  "ST_ng^_2_2"  "ST_ng^_2_11" 
+}
 
 w^[2]
-   "ST_w^_2_1"
+{
+   0             'L_Dipthong'  "ST_w^_2_1"      -1    
+  -1          'R_Unaspirated'  "ST_w^_2_2"  "ST_w^_2_3" 
+}
 
 j^[2]
 {
-   0               'R_Labial'  "ST_j^_2_1"  "ST_j^_2_2" 
+   0               'R_Voiced'      -1     "ST_j^_2_5" 
+  -1             'R_Alveolar'      -2     "ST_j^_2_4" 
+  -2                 'L_Long'      -3     "ST_j^_2_3" 
+  -3              'R_Glottal'  "ST_j^_2_1"  "ST_j^_2_2" 
 }
 
 sil[2]
@@ -328,11 +481,25 @@ s^[2]
 
 ph[3]
 {
-   0                'L_Velar'  "ST_ph_3_1"  "ST_ph_3_2" 
+   0                'L_Velar'      -1         -5    
+  -1                'L_Vowel'      -2     "ST_ph_3_7" 
+  -2                   'L_n^'      -3         -7    
+  -3            'L_Semivowel'      -4         -6    
+  -4             'L_Unvoiced'      -8     "ST_ph_3_2" 
+  -5               'L_Voiced'  "ST_ph_3_8"  "ST_ph_3_9" 
+  -6               'L_Labial'  "ST_ph_3_3"  "ST_ph_3_4" 
+  -7             'R_Dipthong'  "ST_ph_3_5"  "ST_ph_3_6" 
+  -8               'L_Voiced'  "ST_ph_3_1"  "ST_ph_3_9" 
 }
 
 th[3]
-   "ST_th_3_1"
+{
+   0                    'R_a'      -1     "ST_th_3_6" 
+  -1               'L_Voiced'      -4         -2    
+  -2              'L_Palatal'      -3     "ST_th_3_5" 
+  -3                'L_Front'  "ST_th_3_3"  "ST_th_3_4" 
+  -4             'L_Unvoiced'  "ST_th_3_1"  "ST_th_3_2" 
+}
 
 kh[3]
 {
@@ -340,13 +507,22 @@ kh[3]
 }
 
 t[3]
-   "ST_t_3_1"
+{
+   0               'L_Voiced'  "ST_t_3_1"  "ST_t_3_2" 
+}
 
 k[3]
-   "ST_k_3_1"
+{
+   0                'L_Velar'      -1     "ST_k_3_5" 
+  -1                'R_Front'      -2     "ST_k_3_4" 
+  -2            'L_Semivowel'      -3     "ST_k_3_3" 
+  -3                'L_Vowel'  "ST_k_3_1"  "ST_k_3_2" 
+}
 
 z[3]
-   "ST_z_3_1"
+{
+   0            'L_Semivowel'  "ST_z_3_1"  "ST_z_3_2" 
+}
 
 b[3]
 {
@@ -354,25 +530,52 @@ b[3]
 }
 
 d[3]
-   "ST_d_3_1"
+{
+   0                'L_Vowel'  "ST_d_3_1"  "ST_d_3_2" 
+}
 
 m[3]
-   "ST_m_3_1"
+{
+   0                'L_Vowel'  "ST_m_3_1"      -1    
+  -1             'R_Dipthong'  "ST_m_3_2"  "ST_m_3_3" 
+}
 
 n[3]
-   "ST_n_3_1"
+{
+   0               'L_Labial'      -1     "ST_n_3_3" 
+  -1                 'R_Long'      -2     "ST_n_3_3" 
+  -2                'L_Vowel'  "ST_n_3_1"  "ST_n_3_2" 
+}
 
 f[3]
-   "ST_f_3_1"
+{
+   0               'L_Labial'      -1     "ST_f_3_4" 
+  -1                'L_Final'      -2         -3    
+  -2               'L_Voiced'  "ST_f_3_1"  "ST_f_3_2" 
+  -3                   'L_n^'  "ST_f_3_2"  "ST_f_3_3" 
+}
 
 s[3]
 {
-   0            'L_Semivowel'  "ST_s_3_1"  "ST_s_3_2" 
+   0                   'L_k^'      -1     "ST_s_3_10" 
+  -1            'L_Semivowel'      -2     "ST_s_3_9" 
+  -2                  'L_Low'      -3     "ST_s_3_8" 
+  -3               'L_Labial'      -4     "ST_s_3_7" 
+  -4                   'R_@@'      -5     "ST_s_3_6" 
+  -5                'L_Final'  "ST_s_3_1"      -6    
+  -6                 'R_High'      -7         -8    
+  -7                   'L_n^'  "ST_s_3_2"  "ST_s_3_3" 
+  -8              'R_Central'      -9     "ST_s_3_5" 
+  -9             'L_Alveolar'  "ST_s_3_4"  "ST_s_3_6" 
 }
 
 h[3]
 {
-   0                    'R_a'  "ST_h_3_1"  "ST_h_3_2" 
+   0                'L_Vowel'      -1         -2    
+  -1             'L_Unvoiced'  "ST_h_3_1"      -3    
+  -2                 'R_Long'      -4     "ST_h_3_6" 
+  -3             'L_Alveolar'  "ST_h_3_2"  "ST_h_3_3" 
+  -4              'L_Central'  "ST_h_3_4"  "ST_h_3_5" 
 }
 
 w[3]
@@ -382,7 +585,12 @@ r[3]
    "ST_r_3_1"
 
 l[3]
-   "ST_l_3_1"
+{
+   0                    'R_a'      -1         -2    
+  -1                'L_Nasal'      -3     "ST_l_3_3" 
+  -2                'L_Final'  "ST_l_3_4"  "ST_l_3_5" 
+  -3                'L_Short'  "ST_l_3_1"  "ST_l_3_2" 
+}
 
 j[3]
    "ST_j_3_1"
@@ -397,10 +605,18 @@ kr[3]
    "ST_kr_3_1"
 
 i[3]
-   "ST_i_3_1"
+{
+   0                   'L_ph'      -1     "ST_i_3_3" 
+  -1               'L_Voiced'  "ST_i_3_1"  "ST_i_3_2" 
+}
 
 ee[3]
-   "ST_ee_3_1"
+{
+   0               'R_Voiced'  "ST_ee_3_1"      -1    
+  -1             'R_Alveolar'      -2     "ST_ee_3_5" 
+  -2             'L_Unvoiced'      -3     "ST_ee_3_4" 
+  -3                    'L_l'  "ST_ee_3_2"  "ST_ee_3_3" 
+}
 
 x[3]
    "ST_x_3_1"
@@ -409,33 +625,74 @@ v[3]
    "ST_v_3_1"
 
 vv[3]
-   "ST_vv_3_1"
+{
+   0             'R_Unvoiced'  "ST_vv_3_1"  "ST_vv_3_2" 
+}
 
 a[3]
 {
-   0              'R_Palatal'  "ST_a_3_1"  "ST_a_3_2" 
+   0                   'L_ph'      -1     "ST_a_3_14" 
+  -1              'L_Glottal'      -2     "ST_a_3_13" 
+  -2                   'R_p^'      -3     "ST_a_3_12" 
+  -3          'L_Unaspirated'      -4     "ST_a_3_11" 
+  -4                   'L_th'      -5     "ST_a_3_10" 
+  -5                    'R_m'      -6        -11    
+  -6                 'R_Stop'      -7         -9    
+  -7              'R_Initial'      -8     "ST_a_3_5" 
+  -8                'L_Nasal'     -13        -10    
+  -9                'L_Trill'  "ST_a_3_6"  "ST_a_3_7" 
+ -10               'R_Labial'     -12     "ST_a_3_4" 
+ -11               'L_Voiced'  "ST_a_3_8"  "ST_a_3_9" 
+ -12             'L_Alveolar'  "ST_a_3_2"  "ST_a_3_3" 
+ -13               'L_Voiced'  "ST_a_3_1"  "ST_a_3_2" 
 }
 
 aa[3]
-   "ST_aa_3_1"
+{
+   0                'L_Trill'      -1     "ST_aa_3_9" 
+  -1               'L_Voiced'      -2         -4    
+  -2             'L_Unvoiced'      -5         -3    
+  -3               'R_Voiced'  "ST_aa_3_2"  "ST_aa_3_3" 
+  -4            'L_Semivowel'      -7         -8    
+  -5             'L_Alveolar'  "ST_aa_3_5"      -6    
+  -6              'R_Initial'  "ST_aa_3_7"  "ST_aa_3_1" 
+  -7                'L_Nasal'      -9     "ST_aa_3_6" 
+  -8             'R_Unvoiced'  "ST_aa_3_7"  "ST_aa_3_8" 
+  -9                 'L_Stop'  "ST_aa_3_4"  "ST_aa_3_5" 
+}
 
 u[3]
    "ST_u_3_1"
 
 uu[3]
 {
-   0               'L_Voiced'  "ST_uu_3_1"  "ST_uu_3_2" 
+   0               'L_Voiced'      -1     "ST_uu_3_6" 
+  -1                 'R_Stop'      -4         -2    
+  -2             'L_Unvoiced'      -3     "ST_uu_3_5" 
+  -3               'R_Voiced'  "ST_uu_3_3"  "ST_uu_3_4" 
+  -4              'R_Glottal'  "ST_uu_3_1"  "ST_uu_3_2" 
 }
 
+o[3]
+   "ST_o_3_1"
+
 oo[3]
-   "ST_oo_3_1"
+{
+   0               'L_Voiced'  "ST_oo_3_1"  "ST_oo_3_2" 
+}
 
 @[3]
    "ST_@_3_1"
 
 @@[3]
 {
-   0            'L_Fricative'  "ST_@@_3_1"  "ST_@@_3_2" 
+   0            'L_Fricative'      -1     "ST_@@_3_8" 
+  -1             'L_Alveolar'      -2         -3    
+  -2               'L_Voiced'      -5     "ST_@@_3_3" 
+  -3              'L_Lateral'      -4     "ST_@@_3_7" 
+  -4              'R_Initial'      -6     "ST_@@_3_6" 
+  -5            'L_Aspirated'  "ST_@@_3_1"  "ST_@@_3_2" 
+  -6            'L_Aspirated'  "ST_@@_3_4"  "ST_@@_3_5" 
 }
 
 iia[3]
@@ -450,33 +707,85 @@ uua[3]
 }
 
 p^[3]
-   "ST_p^_3_1"
+{
+   0             'R_Unvoiced'  "ST_p^_3_1"  "ST_p^_3_2" 
+}
 
 t^[3]
 {
-   0                'L_Front'  "ST_t^_3_1"  "ST_t^_3_2" 
+   0                'L_Front'      -1     "ST_t^_3_5" 
+  -1              'R_Initial'      -3         -2    
+  -2               'L_Middle'  "ST_t^_3_3"  "ST_t^_3_4" 
+  -3                  'L_Low'  "ST_t^_3_1"  "ST_t^_3_2" 
 }
 
 k^[3]
-   "ST_k^_3_1"
+{
+   0                 'L_High'      -1     "ST_k^_3_3" 
+  -1             'R_Unvoiced'  "ST_k^_3_1"  "ST_k^_3_2" 
+}
 
 m^[3]
-   "ST_m^_3_1"
+{
+   0                    'L_o'      -1         -7    
+  -1            'R_Fricative'      -3         -2    
+  -2              'L_Central'  "ST_m^_3_4"  "ST_m^_3_5" 
+  -3            'R_Cluster-l'      -4     "ST_m^_3_4" 
+  -4                 'L_Long'  "ST_m^_3_1"      -5    
+  -5              'R_Initial'  "ST_m^_3_6"      -6    
+  -6                 'L_Back'  "ST_m^_3_2"      -8    
+  -7              'R_Initial'  "ST_m^_3_6"  "ST_m^_3_7" 
+  -8            'R_Semivowel'  "ST_m^_3_3"  "ST_m^_3_5" 
+}
 
 n^[3]
-   "ST_n^_3_1"
+{
+   0                'L_Front'      -1     "ST_n^_3_14" 
+  -1                 'L_Long'  "ST_n^_3_1"      -2    
+  -2             'R_Alveolar'      -3         -5    
+  -3                 'L_Back'      -8         -4    
+  -4              'R_Initial'  "ST_n^_3_4"      -9    
+  -5                 'L_Back'      -6         -7    
+  -6            'R_Fricative'     -13     "ST_n^_3_10" 
+  -7                'R_Nasal'     -11     "ST_n^_3_13" 
+  -8                'R_Nasal'     -10     "ST_n^_3_3" 
+  -9             'R_Unvoiced'     -12     "ST_n^_3_7" 
+ -10                  'L_uua'  "ST_n^_3_12"  "ST_n^_3_2" 
+ -11            'R_Fricative'  "ST_n^_3_11"  "ST_n^_3_12" 
+ -12            'R_Fricative'  "ST_n^_3_5"  "ST_n^_3_6" 
+ -13             'L_Dipthong'  "ST_n^_3_8"  "ST_n^_3_9" 
+}
 
 ng^[3]
 {
-   0             'L_Dipthong'  "ST_ng^_3_1"  "ST_ng^_3_2" 
+   0                 'L_High'      -1         -7    
+  -1                    'L_a'      -3         -2    
+  -2             'R_Unvoiced'      -6         -8    
+  -3              'R_Initial'  "ST_ng^_3_1"      -4    
+  -4                   'L_aa'      -5     "ST_ng^_3_5" 
+  -5                 'L_Long'  "ST_ng^_3_2"      -9    
+  -6              'R_Initial'  "ST_ng^_3_9"  "ST_ng^_3_6" 
+  -7              'R_Initial'  "ST_ng^_3_9"  "ST_ng^_3_10" 
+  -8            'R_Aspirated'  "ST_ng^_3_7"  "ST_ng^_3_8" 
+  -9             'L_Dipthong'  "ST_ng^_3_3"  "ST_ng^_3_4" 
 }
 
 w^[3]
-   "ST_w^_3_1"
+{
+   0             'L_Dipthong'      -4         -1    
+  -1                   'R_th'      -2     "ST_w^_3_6" 
+  -2          'R_Unaspirated'      -3     "ST_w^_3_5" 
+  -3               'R_Voiced'  "ST_w^_3_3"  "ST_w^_3_4" 
+  -4             'R_Unvoiced'  "ST_w^_3_1"  "ST_w^_3_2" 
+}
 
 j^[3]
 {
-   0               'R_Labial'  "ST_j^_3_1"  "ST_j^_3_2" 
+   0                 'L_Long'      -1         -2    
+  -1             'R_Alveolar'      -3     "ST_j^_3_4" 
+  -2               'R_Voiced'  "ST_j^_3_5"  "ST_j^_3_6" 
+  -3             'R_Unvoiced'  "ST_j^_3_1"      -4    
+  -4               'R_Labial'  "ST_j^_3_2"  "ST_j^_3_3" 
 }
 
 sil[3]
@@ -487,53 +796,101 @@ s^[3]
 
 ph[4]
 {
-   0               'L_Voiced'  "ST_ph_4_1"      -1    
-  -1                   'L_m^'      -2     "ST_ph_4_3" 
-  -2                'L_Velar'  "ST_ph_4_2"  "ST_ph_4_3" 
+   0                   'L_n^'      -1         -5    
+  -1                'L_Vowel'      -2     "ST_ph_4_7" 
+  -2                'L_Nasal'      -3     "ST_ph_4_6" 
+  -3                'L_Final'  "ST_ph_4_1"      -4    
+  -4                 'R_Long'      -7         -6    
+  -5             'R_Dipthong'  "ST_ph_4_8"  "ST_ph_4_9" 
+  -6               'L_Voiced'  "ST_ph_4_4"  "ST_ph_4_5" 
+  -7               'L_Voiced'  "ST_ph_4_2"  "ST_ph_4_3" 
 }
 
 th[4]
-   "ST_th_4_1"
+{
+   0                    'R_a'      -1     "ST_th_4_5" 
+  -1             'R_Dipthong'      -4         -2    
+  -2            'L_Semivowel'      -3     "ST_th_4_4" 
+  -3                'L_Nasal'  "ST_th_4_2"  "ST_th_4_3" 
+  -4                'L_Vowel'  "ST_th_4_1"  "ST_th_4_4" 
+}
 
 kh[4]
-   "ST_kh_4_1"
+{
+   0                'L_Final'  "ST_kh_4_1"  "ST_kh_4_2" 
+}
 
 t[4]
-   "ST_t_4_1"
+{
+   0               'L_Voiced'  "ST_t_4_1"  "ST_t_4_2" 
+}
 
 k[4]
-   "ST_k_4_1"
+{
+   0                'L_Velar'      -1     "ST_k_4_4" 
+  -1                'R_Front'      -2     "ST_k_4_3" 
+  -2                'L_Nasal'  "ST_k_4_1"  "ST_k_4_2" 
+}
 
 z[4]
-   "ST_z_4_1"
+{
+   0            'L_Semivowel'  "ST_z_4_1"  "ST_z_4_2" 
+}
 
 b[4]
-   "ST_b_4_1"
+{
+   0                'L_Vowel'  "ST_b_4_1"  "ST_b_4_2" 
+}
 
 d[4]
-   "ST_d_4_1"
+{
+   0                'L_Vowel'  "ST_d_4_1"  "ST_d_4_2" 
+}
 
 m[4]
 {
-   0                 'L_Long'  "ST_m_4_1"  "ST_m_4_2" 
+   0                 'L_Long'      -1     "ST_m_4_3" 
+  -1                   'R_aa'  "ST_m_4_1"  "ST_m_4_2" 
 }
 
 n[4]
-   "ST_n_4_1"
+{
+   0               'L_Labial'      -1     "ST_n_4_4" 
+  -1                 'R_Long'      -2     "ST_n_4_3" 
+  -2                'L_Vowel'  "ST_n_4_1"  "ST_n_4_2" 
+}
 
 f[4]
-   "ST_f_4_1"
+{
+   0               'L_Labial'      -1     "ST_f_4_4" 
+  -1                   'L_n^'      -2     "ST_f_4_3" 
+  -2                'L_Final'      -3     "ST_f_4_2" 
+  -3               'L_Voiced'  "ST_f_4_1"  "ST_f_4_2" 
+}
 
 s[4]
 {
-   0            'L_Semivowel'      -1     "ST_s_4_3" 
-  -1                   'L_k^'  "ST_s_4_1"  "ST_s_4_2" 
+   0               'L_Voiced'      -3         -1    
+  -1                   'R_vv'      -2     "ST_s_4_12" 
+  -2            'L_Semivowel'      -4     "ST_s_4_11" 
+  -3             'L_Alveolar'  "ST_s_4_1"  "ST_s_4_2" 
+  -4                 'R_High'      -5         -6    
+  -5                'L_Velar'      -7     "ST_s_4_6" 
+  -6               'L_Labial'      -9     "ST_s_4_10" 
+  -7                'L_Vowel'      -8     "ST_s_4_5" 
+  -8                 'R_Long'  "ST_s_4_3"  "ST_s_4_4" 
+  -9                'L_Vowel'     -10     "ST_s_4_9" 
+ -10             'L_Alveolar'  "ST_s_4_7"  "ST_s_4_8" 
 }
 
 h[4]
 {
-   0                    'R_a'      -1     "ST_h_4_3" 
-  -1              'L_Central'  "ST_h_4_1"  "ST_h_4_2" 
+   0                 'R_Long'      -1     "ST_h_4_7" 
+  -1                'L_Vowel'      -2         -5    
+  -2             'L_Unvoiced'      -3         -4    
+  -3               'L_Voiced'  "ST_h_4_1"  "ST_h_4_2" 
+  -4             'L_Alveolar'  "ST_h_4_3"  "ST_h_4_4" 
+  -5              'L_Central'  "ST_h_4_5"  "ST_h_4_6" 
 }
 
 w[4]
@@ -544,7 +901,12 @@ r[4]
 
 l[4]
 {
-   0                 'L_Long'  "ST_l_4_1"  "ST_l_4_2" 
+   0                    'R_a'      -1         -3    
+  -1                'L_Nasal'      -2     "ST_l_4_4" 
+  -2                'L_Short'      -5         -4    
+  -3                'L_Vowel'  "ST_l_4_5"  "ST_l_4_6" 
+  -4                'R_Front'  "ST_l_4_2"  "ST_l_4_3" 
+  -5                'L_Vowel'  "ST_l_4_1"  "ST_l_4_3" 
 }
 
 j[4]
@@ -561,11 +923,17 @@ kr[4]
 
 i[4]
 {
-   0               'L_Voiced'  "ST_i_4_1"  "ST_i_4_2" 
+   0               'L_Voiced'      -1     "ST_i_4_3" 
+  -1             'L_Alveolar'  "ST_i_4_1"  "ST_i_4_2" 
 }
 
 ee[4]
-   "ST_ee_4_1"
+{
+   0                   'R_n^'      -1     "ST_ee_4_5" 
+  -1                    'L_l'      -3         -2    
+  -2               'R_Voiced'  "ST_ee_4_3"  "ST_ee_4_4" 
+  -3               'L_Voiced'  "ST_ee_4_1"  "ST_ee_4_2" 
+}
 
 x[4]
    "ST_x_4_1"
@@ -574,16 +942,41 @@ v[4]
    "ST_v_4_1"
 
 vv[4]
-   "ST_vv_4_1"
+{
+   0             'R_Unvoiced'  "ST_vv_4_1"  "ST_vv_4_2" 
+}
 
 a[4]
 {
-   0              'R_Palatal'  "ST_a_4_1"  "ST_a_4_2" 
+   0                   'L_ph'      -1         -6    
+  -1              'R_Palatal'      -2        -12    
+  -2                   'R_p^'      -3     "ST_a_4_11" 
+  -3                 'R_Stop'      -4        -10    
+  -4                   'L_th'      -5     "ST_a_4_9" 
+  -5                    'R_m'      -7        -11    
+  -6               'R_Voiced'  "ST_a_4_14"  "ST_a_4_15" 
+  -7                'R_Nasal'  "ST_a_4_1"      -8    
+  -8                    'L_n'      -9        -14    
+  -9            'L_Fricative'     -13     "ST_a_4_4" 
+ -10                'L_Trill'  "ST_a_4_13"  "ST_a_4_10" 
+ -11               'L_Voiced'  "ST_a_4_7"  "ST_a_4_8" 
+ -12              'L_Glottal'  "ST_a_4_12"  "ST_a_4_13" 
+ -13                'L_Nasal'  "ST_a_4_2"  "ST_a_4_3" 
+ -14               'R_Labial'  "ST_a_4_5"  "ST_a_4_6" 
 }
 
 aa[4]
 {
-   0            'L_Semivowel'  "ST_aa_4_1"  "ST_aa_4_2" 
+   0              'L_Glottal'      -1         -3    
+  -1             'L_Alveolar'      -2         -4    
+  -2             'R_Alveolar'  "ST_aa_4_1"      -6    
+  -3               'R_Voiced'  "ST_aa_4_8"      -7    
+  -4               'L_Voiced'      -5         -8    
+  -5              'R_Initial'  "ST_aa_4_4"  "ST_aa_4_5" 
+  -6                 'L_Stop'      -9     "ST_aa_4_3" 
+  -7             'L_Unvoiced'  "ST_aa_4_9"  "ST_aa_4_10" 
+  -8                'L_Trill'  "ST_aa_4_6"  "ST_aa_4_7" 
+  -9            'L_Semivowel'  "ST_aa_4_6"  "ST_aa_4_2" 
 }
 
 u[4]
@@ -591,8 +984,15 @@ u[4]
 
 uu[4]
 {
-   0               'L_Voiced'  "ST_uu_4_1"  "ST_uu_4_2" 
+   0               'L_Voiced'      -1     "ST_uu_4_6" 
+  -1             'R_Unvoiced'      -2         -4    
+  -2                 'R_Stop'      -3     "ST_uu_4_3" 
+  -3              'R_Glottal'  "ST_uu_4_1"  "ST_uu_4_2" 
+  -4             'L_Unvoiced'  "ST_uu_4_4"  "ST_uu_4_5" 
 }
+
+o[4]
+   "ST_o_4_1"
 
 oo[4]
    "ST_oo_4_1"
@@ -602,7 +1002,13 @@ oo[4]
 
 @@[4]
 {
-   0                'R_Nasal'  "ST_@@_4_1"  "ST_@@_4_2" 
+   0            'L_Fricative'      -1     "ST_@@_4_8" 
+  -1          'L_Stop-Voiced'      -2     "ST_@@_4_7" 
+  -2             'R_Alveolar'      -3         -4    
+  -3               'L_Voiced'  "ST_@@_4_1"  "ST_@@_4_2" 
+  -4             'L_Unvoiced'  "ST_@@_4_3"      -5    
+  -5                    'L_t'      -6     "ST_@@_4_6" 
+  -6             'L_Alveolar'  "ST_@@_4_4"  "ST_@@_4_5" 
 }
 
 iia[4]
@@ -617,38 +1023,88 @@ uua[4]
 }
 
 p^[4]
-   "ST_p^_4_1"
+{
+   0             'R_Unvoiced'  "ST_p^_4_1"  "ST_p^_4_2" 
+}
 
 t^[4]
-   "ST_t^_4_1"
+{
+   0               'L_Middle'      -2         -1    
+  -1              'R_Initial'  "ST_t^_4_4"  "ST_t^_4_5" 
+  -2                'L_Front'      -3     "ST_t^_4_3" 
+  -3              'R_Initial'  "ST_t^_4_1"  "ST_t^_4_2" 
+}
 
 k^[4]
-   "ST_k^_4_1"
+{
+   0                 'L_High'      -1     "ST_k^_4_3" 
+  -1             'R_Unvoiced'  "ST_k^_4_1"  "ST_k^_4_2" 
+}
 
 m^[4]
 {
-   0            'R_Cluster-r'      -1     "ST_m^_4_4" 
-  -1            'R_Semivowel'      -2     "ST_m^_4_3" 
-  -2                 'L_Long'  "ST_m^_4_1"  "ST_m^_4_2" 
+   0              'R_Initial'      -6         -1    
+  -1                    'R_s'      -3         -2    
+  -2              'L_Central'  "ST_m^_4_9"  "ST_m^_4_10" 
+  -3            'R_Cluster-l'      -4     "ST_m^_4_8" 
+  -4                    'L_o'      -5     "ST_m^_4_7" 
+  -5                 'L_Back'      -7         -8    
+  -6                'L_Front'      -9     "ST_m^_4_3" 
+  -7                 'L_Long'  "ST_m^_4_4"  "ST_m^_4_5" 
+  -8                    'R_t'  "ST_m^_4_6"  "ST_m^_4_10" 
+  -9                 'L_Long'  "ST_m^_4_1"  "ST_m^_4_2" 
 }
 
 n^[4]
 {
-   0                    'R_t'  "ST_n^_4_1"  "ST_n^_4_2" 
+   0                    'R_f'      -1     "ST_n^_4_15" 
+  -1                 'L_Long'  "ST_n^_4_1"      -2    
+  -2                  'L_vva'      -3        -13    
+  -3                    'R_n'      -4         -7    
+  -4              'R_Initial'  "ST_n^_4_2"      -5    
+  -5            'R_Aspirated'      -6        -11    
+  -6                'R_Nasal'      -8     "ST_n^_4_8" 
+  -7              'L_Central'  "ST_n^_4_11"  "ST_n^_4_12" 
+  -8             'L_Dipthong'      -9     "ST_n^_4_7" 
+  -9                'L_Front'     -10     "ST_n^_4_6" 
+ -10          'R_Stop-Voiced'     -12     "ST_n^_4_5" 
+ -11              'L_Central'  "ST_n^_4_9"  "ST_n^_4_10" 
+ -12            'R_Fricative'  "ST_n^_4_3"  "ST_n^_4_4" 
+ -13             'R_Unvoiced'  "ST_n^_4_13"  "ST_n^_4_14" 
 }
 
 ng^[4]
-   "ST_ng^_4_1"
+{
+   0                    'R_f'      -1         -3    
+  -1              'R_Initial'      -5         -2    
+  -2                 'L_Long'      -4     "ST_ng^_4_10" 
+  -3                 'L_Long'  "ST_ng^_4_11"  "ST_ng^_4_12" 
+  -4                   'R_ph'      -6     "ST_ng^_4_9" 
+  -5                   'L_aa'      -9     "ST_ng^_4_4" 
+  -6                'L_Front'      -7     "ST_ng^_4_8" 
+  -7          'R_Unaspirated'      -8     "ST_ng^_4_7" 
+  -8            'R_Fricative'  "ST_ng^_4_5"  "ST_ng^_4_6" 
+  -9                'L_Front'     -10     "ST_ng^_4_3" 
+ -10             'L_Dipthong'  "ST_ng^_4_1"  "ST_ng^_4_2" 
+}
 
 w^[4]
 {
-   0                   'R_ph'  "ST_w^_4_1"  "ST_w^_4_2" 
+   0          'R_Unaspirated'      -1     "ST_w^_4_7" 
+  -1               'R_Voiced'      -2     "ST_w^_4_6" 
+  -2             'L_Dipthong'      -5         -3    
+  -3                   'R_th'      -4     "ST_w^_4_5" 
+  -4            'R_Fricative'  "ST_w^_4_3"  "ST_w^_4_4" 
+  -5             'R_Unvoiced'  "ST_w^_4_1"  "ST_w^_4_2" 
 }
 
 j^[4]
 {
-   0              'R_Glottal'      -1     "ST_j^_4_3" 
-  -1                 'L_Long'  "ST_j^_4_1"  "ST_j^_4_2" 
+   0              'R_Glottal'      -1     "ST_j^_4_5" 
+  -1              'R_Initial'  "ST_j^_4_1"      -2    
+  -2                   'R_th'      -3     "ST_j^_4_4" 
+  -3             'R_Unvoiced'  "ST_j^_4_2"      -4    
+  -4                 'L_Long'  "ST_j^_4_2"  "ST_j^_4_3" 
 }
 
 sil[4]

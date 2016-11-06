@@ -1,1 +1,0 @@
-HVite -H ./am/hmm_5/newMacros -C ./config/liveRecog.config -w ./lm/dgs.wdnet ./config/dgs.dict config/monophn.list
